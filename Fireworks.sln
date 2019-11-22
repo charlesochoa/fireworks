@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fireworks", "Fireworks\Fireworks.csproj", "{FC85B7BA-3D08-45FF-8938-9349529B9551}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC85B7BA-3D08-45FF-8938-9349529B9551}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{FC85B7BA-3D08-45FF-8938-9349529B9551}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{FC85B7BA-3D08-45FF-8938-9349529B9551}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{FC85B7BA-3D08-45FF-8938-9349529B9551}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{FC85B7BA-3D08-45FF-8938-9349529B9551}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{FC85B7BA-3D08-45FF-8938-9349529B9551}.Debug|iPhone.Build.0 = Debug|iPhone
+		{FC85B7BA-3D08-45FF-8938-9349529B9551}.Release|iPhone.ActiveCfg = Release|iPhone
+		{FC85B7BA-3D08-45FF-8938-9349529B9551}.Release|iPhone.Build.0 = Release|iPhone
+	EndGlobalSection
+EndGlobal
