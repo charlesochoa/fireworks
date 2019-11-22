@@ -1,27 +1,140 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772" />
-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0" />
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController" storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ" />
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE" />
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736" />
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" />
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8002" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="34" y="659" width="99" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="19806" firstAttribute="width" constant="99"/>
+                                    <constraint id="20471" firstAttribute="height" constant="24"/>
+                                </constraints>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="8006" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="163" y="658" width="220" height="27"/>
+                                <connections>
+                                    <action selector="SliderSize_ValueChanged:" destination="BYZ-38-t0r" id="17859" eventType="valueChanged"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="20054" firstAttribute="width" constant="216"/>
+                                    <constraint id="20068" firstAttribute="height" constant="26"/>
+                                </constraints>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Night:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8001" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="34" y="580" width="99" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="19858" firstAttribute="height" constant="24"/>
+                                    <constraint id="19859" firstAttribute="width" constant="99"/>
+                                </constraints>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="8003" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="193" y="576" width="51" height="31"/>
+                                <connections>
+                                    <action selector="SwitchNight_ValueChanged:" destination="BYZ-38-t0r" id="17415" eventType="valueChanged"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8004" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="281" y="577" width="96" height="30"/>
+                                <color key="backgroundColor" colorSpace="custom" customColorSpace="sRGB" red="0.04353092611" green="0.491525054" blue="0.9863359332" alpha="0.24"/>
+                                <state key="normal" title="Start"/>
+                                <connections/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" lineBreakMode="middleTruncation" id="21012" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="355" y="41" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal"/>
+                                <connections>
+                                    <segue id="23851" destination="21008" kind="modal"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="10617" firstAttribute="trailingMargin" secondItem="8006" secondAttribute="trailing" constant="13"/>
+                            <constraint id="10640" firstItem="8006" firstAttribute="leading" secondItem="8002" secondAttribute="trailing" constant="32"/>
+                            <constraint id="10722" firstAttribute="trailingMargin" secondItem="8004" secondAttribute="trailing" constant="17"/>
+                            <constraint id="11438" firstItem="8002" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="14"/>
+                            <constraint id="11763" firstItem="8001" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="14"/>
+                            <constraint id="13578" firstItem="8003" firstAttribute="leading" secondItem="8001" secondAttribute="trailing" constant="60"/>
+                            <constraint id="14506" firstItem="8004" firstAttribute="leading" secondItem="8003" secondAttribute="trailing" constant="39"/>
+                            <constraint id="20263" firstItem="8002" firstAttribute="centerY" secondItem="8006" secondAttribute="centerY"/>
+                            <constraint id="20476" firstItem="wfy-db-euE" firstAttribute="top" secondItem="8002" secondAttribute="bottom" constant="53"/>
+                            <constraint id="20754" firstItem="8002" firstAttribute="top" secondItem="8001" secondAttribute="bottom" constant="55"/>
+                            <constraint id="20760" firstItem="8003" firstAttribute="centerY" secondItem="8001" secondAttribute="centerY"/>
+                            <constraint id="20761" firstItem="8004" firstAttribute="centerY" secondItem="8001" secondAttribute="centerY"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="switchNight" destination="8003" id="name-outlet-8003"/>
+                        <outlet property="buttonStart" destination="8004" id="name-outlet-8004"/>
+                        <outlet property="sliderSize" destination="8006" id="name-outlet-8006"/>
+                        <outlet property="labelNight" destination="8001" id="name-outlet-8001"/>
+                        <outlet property="labelSize" destination="8002" id="name-outlet-8002"/>
+                        <outlet property="buttonAbout" destination="21012" id="name-outlet-21012"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder" />
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0" />
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <scene sceneID="21007">
+            <objects>
+                <viewController id="21008" sceneMemberID="viewController" customClass="AboutViewController" storyboardIdentifier="AboutViewController" useStoryboardIdentifierAsRestorationIdentifier="YES">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="21005"/>
+                        <viewControllerLayoutGuide type="bottom" id="21006"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="21009" customClass="AboutViewController" customModule="Fireworks">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="21282" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="184" y="626" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="ButtonClose_TouchUpInside:" destination="21008" id="23214" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Fireworks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="23461" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="140" y="107" width="135" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <accessibility key="accessibilityConfiguration" identifier="AboutViewController"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonClose" destination="21282" id="name-outlet-21282"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="21010" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="568" y="-21"/>
         </scene>
     </scenes>
 </document>
